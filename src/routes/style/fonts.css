@@ -1,0 +1,26 @@
+.text-bold {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.text-regular {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+}
+
+.text-light {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.logo-text {
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
