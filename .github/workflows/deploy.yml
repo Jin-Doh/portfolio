@@ -42,5 +42,5 @@ jobs:
             npm run build
             # pm2 restart portfolio
             # If using Docker, use the following instead:
-            docker compose down
-            docker compose up -d --build
+            docker-compose down
+            docker-compose up -d --build
