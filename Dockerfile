@@ -9,8 +9,8 @@ RUN npm run build
 # 2. Prepare the environment for Nginx and Node.js
 FROM nginx:stable-perl AS server
 
-# Install Node.js for running the SvelteKit SSR server
-RUN apt-get update && apt-get install -y curl && \
+# Install Node.js for running the SvelteKit SSR server and Certbot for SSL management
+RUN apt-get update && apt-get install -y curl certbot python3-certbot-nginx && \
     curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && \
     apt-get install -y nodejs && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
@@ -27,8 +27,8 @@ COPY ./nginx.conf /etc/nginx/conf.d/default.conf
 # Create directories for Certbot to use for webroot verification
 RUN mkdir -p /var/www/certbot
 
-# Expose ports for HTTP (1080) and HTTPS (1443)
-EXPOSE 1080 1443
+# Expose ports for HTTP (80) and HTTPS (443)
+EXPOSE 80 443
 
 # Start both Nginx and the SvelteKit server
 CMD ["sh", "-c", "node .svelte-kit/output/server/index.js & nginx -g 'daemon off;'"]
