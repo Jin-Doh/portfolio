@@ -13,7 +13,7 @@ FROM nginx:stable-perl AS server
 COPY --from=builder /app/build /usr/share/nginx/html
 
 # Copy Nginx configuration for the Svelte app
-COPY /etc/nginx/sites-available/kyungho.info.conf /etc/nginx/conf.d/kyungho.info.conf
+COPY ./nginx.conf /etc/nginx/conf.d/kyungho.info.conf
 
 # Create directories for Certbot to use for webroot verification
 RUN mkdir -p /var/www/certbot
