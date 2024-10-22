@@ -31,9 +31,9 @@ jobs:
       - name: Start SSH Agent and Add id_rsa
         run: |
           eval $(ssh-agent -s)
-          echo "${{ secrets.SERVER_SSH_KEY }}" > /home/ubuntu/.ssh/id_rsa
-          chmod 600 /home/ubuntu/.ssh/id_rsa
-          echo "${{ secrets.SERVER_SSH_PASSWORD }}" | ssh-add /home/ubuntu/.ssh/id_rsa
+          echo "${{ secrets.SERVER_SSH_KEY }}" > id_rsa
+          chmod 600 id_rsa
+          echo "${{ secrets.SERVER_SSH_PASSWORD }}" | ssh-add id_rsa
         env:
           SERVER_SSH_PASSWORD: ${{ secrets.SERVER_SSH_PASSWORD }}
           SERVER_SSH_KEY: ${{ secrets.SERVER_SSH_KEY }}

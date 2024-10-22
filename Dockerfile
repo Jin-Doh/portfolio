@@ -18,8 +18,13 @@ RUN apt-get update && apt-get install -y curl certbot python3-certbot-nginx && \
 # Set working directory for the Node.js app
 WORKDIR /app
 
-# Copy the built Svelte app from the builder
-COPY --from=builder /app ./
+# Copy the built Svelte app from the builder (client and server separately)
+COPY --from=builder ./.svelte-kit/output/client /usr/share/nginx/html
+COPY --from=builder ./.svelte-kit/output/server /app/server
+COPY --from=builder /app/package*.json /app
+
+# Install production dependencies (if needed)
+RUN npm install --only=production
 
 # Copy Nginx configuration for the Svelte app
 COPY ./nginx.conf /etc/nginx/conf.d/default.conf
@@ -31,4 +36,4 @@ RUN mkdir -p /var/www/certbot
 EXPOSE 80 443
 
 # Start both Nginx and the SvelteKit server
-CMD ["sh", "-c", "node .svelte-kit/output/server/index.js & nginx -g 'daemon off;'"]
+CMD ["sh", "-c", "node /app/server/index.js & nginx -g 'daemon off;'"]
