@@ -27,13 +27,6 @@ jobs:
       - name: Build the project
         run: npm run build
 
-      # Upload build artifacts (optional)
-      - name: Upload build artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: svelte-build
-          path: build/
-
       # Deploy to the server using SSH
       - name: Deploy to Server
         uses: appleboy/ssh-action@v0.1.7
@@ -47,4 +40,7 @@ jobs:
             git pull origin main
             npm install
             npm run build
-            pm2 restart portfolio
+            # pm2 restart portfolio
+            # If using Docker, use the following instead:
+            docker compose down
+            docker compose up -d --build
