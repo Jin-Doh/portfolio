@@ -2,13 +2,19 @@
     "projects": [
         {
             "subject": "온라인 기반 도로 파손 기록 체계 수립",
-            "period": "2021.09 ~ 2021.12",
+            "period": "2021.07 ~ 2021.09",
             "role": "인턴",
-            "skills": ["Google Maps", "Google My Maps", "Google Docs", "REST API"],
+            "skills": [
+                "Google Maps",
+                "Google My Maps",
+                "Google Docs",
+                "RESTful API"
+            ],
             "description": [
-                "MOTOV 협업 택시를 이용한 도로 파손 관련 데이터 수집",
+                "MOTOV 협업 택시를 이용한 도로 파손 관련 데이터 수집 업무 수행",
                 "기존 종이 인쇄물 기반 도로 파손 기록 및 PowerPoint 기반 보고서 작성을 Google 기반으로 온라인 전환",
-                "개인 사용 목적으로 운용하던 해당 프로젝트를 사내 허락을 통해 전체 인턴에게 공유",
+                "종이 인쇄물 기반의 경우, 위치가 부정확할 확률이 높고 보고서 작성 시간이 오래 걸리는 문제점 존재",
+                "개인 사용 목적으로 해당 단점을 극복하기 위해 Google MyMaps, Google Maps TimeLine 기반으로 운용하던 방법을 담당자 허락을 통해 전체 인턴에게 공유",
                 "이동 경로 과정에서 추가된 어린이 보호 구역에 대한 정보는 공공데이터포털 API를 통해 추가"
             ],
             "result": [
@@ -19,6 +25,11 @@
             "insight": [
                 "Google MyMaps를 이용한 도로 파손 위치 정보 제공은 기존 종이 인쇄물 기반의 도로 파손 기록에 비해 정확도가 높음",
                 "관리자급 이상의 권한을 가진 사용자에게만 수정 권한을 부여하여, 데이터의 무단 수정 및 삭제를 방지"
+            ],
+            "reference": [
+                "<iframe loading=async src=\"https://www.google.com/maps/d/embed?mid=1OvKzDkKuCd2xmde8QOCnCy6OyJZ1jz_X&ehbc=2E312F\" width=\"236.25\" height=\"177.19\"></iframe>",
+                "<iframe loading=async src=\"https://www.google.com/maps/d/embed?mid=1mhBh0Zl4V50jxAb4vzn2oNFn7sx2vP-T&ehbc=2E312F\" width=\"236.25\" height=\"177.19\"></iframe>",
+                "<iframe loading=async src=\"https://www.google.com/maps/d/embed?mid=1p8-8zpvYnb5Y-FAEzWwMcxxG8dnjBvDi&ehbc=2E312F\" width=\"236.25\" height=\"177.19\"></iframe>"
             ]
         },
         {
@@ -34,41 +45,59 @@
             "description": [
                 "Proxmark3를 이용한 학생증 NFC 스티커 개발",
                 "학생증 라이센스에 대한 협의를 위하여 우리은행 가톨릭대학교 출장점과의 미팅 및 합의",
-                "NFC Reading 과정에서의 개인정보 유출 및 보안정보 유출 방지를 위한 가톨릭대학교 정보보안팀과의 미팅 및 합의",
-                "정보보안팀과의 보안 대책 결과로 인한 학생증 재발급 건수 증가 우려로 인한 학생지원팀과의 미팅 및 합의",
-                "네이버 스마트스토어, 교내 홍보 포스터, 에브리타임 등을 통해 학생들에게 프로젝트 홍보"
+                "NFC Reading 과정에서의 개인정보 유출 및 보안정보 유출 방지를 위한 가톨릭대학교 시설관재팀과의 미팅 및 합의",
+                "시설관재팀과의 보안 대책 결과로 인한 학생증 재발급 건수 증가 우려로 인한 학생지원팀과의 미팅 및 합의",
+                "외주 보안업체인 새콤으로부터 보안 취약점 발생 우려로 인한 거부 및 관련 협의",
+                "네이버 스마트스토어, 교내 홍보 포스터, 에브리타임 등을 통해 학생들에게 프로젝트 홍보",
+                "초기 프로토타입 개발 시 알파 및 베타 테스트 과정에서 일부 기기 NFC 간섭 등의 문제 발생",
+                "테스트 과정에서 사용자 피드백을 수렴하고, 이를 바탕으로 개선사항을 반영하여 최종 프로덕트 개발"
             ],
             "result": [
                 "NFC 스티커를 이용한 학생증 시스템이 성공적으로 도입되어, COVID-19 기간 동안 학생들의 학생증 분실 건수가 감소",
-                "개발된 솔루션을 통해 각 건물 경비 인력의 불필요한 통화 및 학생 확인 절차에 대한 시간 소요 감소"
+                "개발된 솔루션을 통해 각 건물 경비 인력의 불필요한 통화 및 학생 확인 절차에 대한 시간 소요 감소",
+                "중국발 수입에만 의존하던 수익 구조를 개선하여 IT 부문으로도 확장하기 시작"
             ],
             "insight": [
                 "학교 주도 사업이 아니었던 관계로 타 학교에서 시행하고 있던 모바일 학생증으로의 전환이 아니었음은 아쉬운 평가",
                 "정보보안과 사용자 경험(UX)의 균형을 맞추는 것이 중요한 과제였으며, 각 유관부서와의 협의가 중요한 역할을 했음",
-                "초기 프로토타입 개발 시 알파 및 베타 테스트를 통해 사용자 피드백을 수렴하고, 이를 바탕으로 개선사항을 반영하여 개발"
+                "프로젝트 과정에서의 테스트 중요성과 초기 사용자 피드백의 중요성 등을 배움"
+            ],
+            "reference": [
+                "/reference_imgs/nfc_1.webp",
+                "/reference_imgs/nfc_2.webp"
             ]
         },
         {
             "subject": "On-Premise 서버 구축 및 관리",
             "period": "2022.12 ~ 2024.06",
             "role": "책임자",
-            "skills": ["Ubuntu", "OpenSSH", "Docker", "Grafana", "Prometheus", "Python", "Bash"],
+            "skills": [
+                "Ubuntu",
+                "OpenSSH",
+                "Docker",
+                "Grafana",
+                "Prometheus"
+            ],
             "description": [
                 "Ubuntu 20.04 LTS를 이용한 On-Premise 서버 구축",
                 "OpenSSH를 이용한 원격 접속 및 서버 관리",
                 "Docker를 이용한 서버 환경 구축",
                 "Grafana와 Prometheus를 이용한 서버 모니터링 및 알림 설정",
-                "Python과 Bash를 이용한 서버 자동화 스크립트 개발"
+                "서버 사용과 관련한 협업 체계 수립",
+                "2024년 여름경 고온으로 인한 서버 캐퍼시터 파손 경험"
             ],
             "result": [
                 "On-Premise 서버를 이용한 서비스 운영으로 인한 클라우드 서비스 비용 절감",
                 "Grafana와 Prometheus를 이용한 서버 모니터링으로 인한 서버 다운타임 감소",
-                "Python과 Bash를 이용한 서버 자동화 스크립트로 인한 서버 관리 시간 단축"
+                "서버 관리 협업 체계 수립으로 인한 제한된 서버 리소스 관리 효율화"
             ],
             "insight": [
-                "On-Premise 서버 구축 시, 서버의 물리적 위치 및 전력 소비량 등을 고려하여 서버 구축",
-                "서버 모니터링 시, 서버의 CPU, Memory, Disk 사용량 등을 모니터링하여 서버의 상태를 파악",
-                "서버 자동화 스크립트 개발 시, 서버의 백업, 로그 관리, 서버 재부팅 등을 자동화하여 서버 관리 시간을 단축"
+                "On-Premise 서버 구축 시, 서버의 물리적 위치 및 전력 소비량, 발열 등을 고려하여야 함을 배움",
+                "서버 모니터링 시, 서버 CPU, Memory, Disk I/O, VRAM 등을 모니터링하여 서버 상태 파악의 중요성 인식",
+                "독립된 업무 네트워크로 구축하지 않을 경우, 무작위 SSH 접속 공격을 받을 수 있음을 인지하며, 보안에 대한 중요성을 배움"
+            ],
+            "reference": [
+                ""
             ]
         },
         {
@@ -76,46 +105,100 @@
             "period": "2022.10 ~ 2024.06",
             "role": "책임자",
             "skills": [
-                "Docker", "PostgreSQL", "Bash"
+                "Docker",
+                "PostgreSQL",
+                "Bash"
             ],
             "description": [
-                "Docker를 이용한 Mattermost 서버 구축",
-                "PostgreSQL을 이용한 데이터베이스 관리",
-                "Bash를 이용한 서버 관리 스크립트 개발",
-                "데이터 백업 및 복구 방안 수립"
+                "개발 투자 단계에 해당하던 당시 사내 상황상 각종 비용에 대한 절감이 필요하여, Mattermost 서버 구축",
+                "향후 이전할 수 있음을 염두에 두고 Docker를 이용한 서버 환경 구축",
+                "Mattermost에서 기본적으로 지원하는 PostgreSQL를 Docker 환경에서 구축 및 관리",
+                "Let's Encrypt를 이용한 SSL 인증서 발급을 통한 HTTPS 및 HSTS 적용"
             ],
             "result": [
-                "Docker를 이용한 Mattermost 서버 구축으로 인한 서버 확장성 증가",
-                "PostgreSQL을 이용한 데이터베이스 관리로 인한 데이터 관리 효율화",
-                "Bash를 이용한 서버 관리 스크립트로 인한 서버 관리 시간 단축"
+                "Mattermost에 기반한 사내 업무 환경 및 문화를 조성",
+                "Slack과 비교하여 일부 기능에 대한 호환성 문제가 있었으나, 대부분 해결하여 사용자 불편 최소화 및 관련 비용 절감"
             ],
             "insight": [
-                "Mattermost 서버 구축 시, Mattermost의 버전 및 기능을 고려하여 서버 구축",
-                "PostgreSQL 데이터베이스 관리 시, 데이터베이스의 백업 및 복구 방안을 수립하여 데이터 손실 방지",
-                "서버 관리 스크립트 개발 시, 서버의 로그 관리, 서버 재부팅 등을 자동화하여 서버 관리 시간을 단축"
+                "초기 Docker를 이용하지 않고 구현했을 때, 확장성 및 이식성이 떨어짐을 경험. 확장성 및 이식성을 고려하였을 때 Docker의 중요성을 배움",
+                "오픈소스 솔루션을 사용할 때, 사용자의 편의성 및 기능 호환성, 버전 업그레이드에 대한 사항을 고려하여야 함을 배움",
+                "PostgreSQL 데이터베이스 관리 시, 데이터베이스의 백업 및 복구 방안을 수립하여 데이터 손실 방지"
             ]
         },
         {
             "subject": "사내 Git 서버 구축 및 관리",
             "period": "2022.12 ~ 2024.06",
             "role": "책임자",
-            "skills": ["Git", "GitLab", "Docker", "Python", "Rest API"],
+            "skills": [
+                "Git",
+                "GitLab",
+                "Docker",
+                "RESTful API"
+            ],
             "description": [
                 "Docker를 이용한 Git, GitLab 서버 구축",
-                "Git, Git-LFS를 이용한 소스 코드 관리",
-                "Python을 이용한 GitLab API 개발",
-                "Rest API를 이용한 GitLab API 연동",
-                "TODO: 구축 초기 해킹으로 인한 문제 풀어낼 것"
+                "Gitlab 서버를 구축한 초기 해킹으로 인한 서버 탈취 문제 발생",
+                "해당 문제에 대한 원인은 구버전을 시도하였을 때 발생한 문제로, 보안 패치가 적용된 최신 버전으로 업그레이드",
+                "Let's Encrypt에 기반한 SSL 인증서 발급, HTTPS 및 HSTS 적용",
+                "Machine Learning 모델 및 기타 대용량 파일을 관리하기 위해 Git-LFS를 이용한 소스 코드 관리",
+                "Gitlab API를 이용한 다른 서비스와의 연동성 증가",
+                "Docker 기반 Runner 환경에서의 Gitlab CI/CD를 이용한 일부 서비스의 자동화"
             ],
             "result": [
                 "GitLab을 이용한 소스 코드 관리로 인한 소스 코드 관리 효율화",
-                "Python을 이용한 GitLab API 개발로 인한 GitLab API 활용도 증가",
-                "Rest API를 이용한 GitLab API 연동으로 인한 다른 서비스와의 연동성 증가"
+                "GitLab Issues, Wiki를 이용한 협업 효율화",
+                "GitLab API를 이용한 다른 서비스와의 연동으로 인한 서비스 통합성 증가"
             ],
             "insight": [
-                "GitLab 서버 구축 시, GitLab의 버전 및 기능을 고려하여 서버 구축",
-                "GitLab API 개발 시, GitLab의 API 문서를 참고하여 API 개발",
-                "Rest API 연동 시, 다른 서비스의 API 문서를 참고하여 API 연동"
+                "보안 패치가 적용된 최신 버전으로 업그레이드 시, 구버전의 보안 취약점을 해결할 수 있음을 배움",
+                "GitLab API를 이용한 다른 서비스와의 연동 시, 서비스 통합성을 고려하여야 함을 배움",
+                "CI/CD를 이용한 자동화 시, 서비스의 품질 향상 및 개발 생산성 증가를 경험"
+            ]
+        },
+        {
+            "subject": "서비스 백엔드 서버 구축",
+            "period": "2023.04 ~ 2023.09",
+            "role": "협업 책임자",
+            "skills": [
+                "Python",
+                "gRPC",
+                "Docker",
+                "PostgreSQL",
+                "PyTorch",
+                "Firebase",
+                "Azure",
+                "Kubernetes",
+                "Grafana",
+                "Prometheus",
+                "dcgm-exporter"
+            ],
+            "description": [
+                "서버 언어 및 프레임워크, 데이터베이스, 통신 프로토콜 등의 기술 스택 선정",
+                "인공지능 모델이 PyTorch로 구현되어 있던 점과 기술 부채가 상대적으로 적었던 Python 활용 결정",
+                "오디오 데이터 송수신이 주된 기능이었기에 RESTful API 대신 대역폭 효율성이 높은 gRPC 프로토콜 사용",
+                "각 기능 별 Docker Container로 분리하여 서버 확장성 및 유지보수성 증가",
+                "설계 당시 고성능 VM 등을 활용할 수 없었던 상황에서 최우선적으로 서버 확장성을 요구받아 Azure Kubernetes Service(AKS) 활용 결정",
+                "지속적으로 증가하는 업무량으로 인해 부가 기능 개발을 위한 시간과 비용을 최소화하기 위해 Firebase 이용",
+                "Redis를 이용한 캐싱 서버를 고려하였으나, 유의미한 성능 향상이 없는 것으로 판단하여 미사용",
+                "Database를 구현 당시 테이블 정의서, ERD 등의 문서화 작업 수행",
+                "서버 구현 후 Grafana, Prometheus, dcgm-exporter를 이용한 서버 모니터링",
+                "테스트 과정에서 모니터링 결과 MSA는 오버 테크놀로지로 판단되어, 단일 VM 내에서 모놀리식 서버로 변경",
+                "추후 서비스 규모가 커질 것에 대비하여 MSA 형태로 Docker Container로 분리하여 서버 구축"
+            ],
+            "result": [
+                "신규 Database 테이블 추가 및 기능 추가 시, 문서화 작업을 통해 개발자 간의 협업 효율화",
+                "gRPC 프로토콜을 이용한 데이터 송수신으로 인한 대역폭 효율성 증가",
+                "Docker Container로 분리하여 서버 확장성 및 유지보수성 증가"
+            ],
+            "insight": [
+                "RESTful API와 달리 gRPC의 경우, 초기 설정 및 학습 곡선이 높음을 경험",
+                "Docker Container로 분리하여 서버 확장성 및 유지보수성 증가를 경험",
+                "Redis를 이용한 캐싱 서버를 고려할 때, 유의미한 성능 향상이 없는 경우가 있음을 경험",
+                "MSA와 같이 최근 트렌드로 판단되는 기술이 항상 적합한 것은 아님을 경험",
+                "개발 과정에서 개발 요소에 대한 판단은 기획자, 개발자, 운영자 간의 긴밀한 협의가 필요함을 경험"
+            ],
+            "reference": [
+                "/reference_imgs/data_pipeline.webp"
             ]
         },
         {
@@ -123,7 +206,8 @@
             "period": "2023.11 ~ 2024.06",
             "role": "책임자",
             "skills": [
-                "Docker", "Python", "Rest API", "Bash"
+                "Docker",
+                "Python"
             ],
             "description": [
                 "다양한 사내 솔루션의 통합적인 적용을 위한 SSO 구축",
@@ -136,9 +220,81 @@
                 "Radius 서버를 이용한 무선망 보안으로 인한 보안성 증가"
             ],
             "insight": [
-                "SSO 구축 시, 사용자의 편의성을 고려하여 SSO 구축",
-                "VPN 구축 시, 무선망 환경에서의 솔루션 사용 효율화를 고려하여 VPN 구축",
-                "Radius 서버 구축 시, 무선망 보안을 고려하여 Radius 서버 구축"
+                "사내 무선망이 아닌 외부 네트워크에서의 접속 시, VPN을 이용한 보안성 증가를 경험",
+                "SSO를 이용한 솔루션 통합 시, 사용자 편의성 증가 및 보안성 증가를 경험",
+                "Radius 서버를 이용한 무선망 보안 시, 무선망 환경에서의 보안성 증가를 경험"
+            ]
+        },
+        {
+            "subject": "특허 출원 및 등록",
+            "period": "2023.03 ~ 2024.03",
+            "role": "책임자",
+            "skills": [
+                "Pages"
+            ],
+            "description": [
+                "특허 출원 번호: 10-2023-0048347 (인공지능 알고리즘에 기초한 고인의 음성 데이터를 이용하여 심리 상담 서비스를 제공하는 방법",
+                "서비스 개념 보호 및 관련 자금 확보를 위하여 사내 비즈니스 아이템에 대한 특허 출원 진행 총괄 및 담당",
+                "많은 변리사 중 기술과 관련한 특허 출원에 이해도가 높은 변리사를 선정하여 출원 진행",
+                "특허 출원서 작성 과정에서 안전한 권리 보호를 위해 변리사와의 논의 및 수정 작업 수행",
+                "특허 출원서 작성 완료 후, 변리사와의 논의를 통해 출원서 제출",
+                "특허 출원 후, 자사 특허 내용의 일부가 해당 변리사를 통해 타사에 유출된 정황 식별",
+                "해당 변리사에게 문제 제기 후 관련 사항에 대한 후속 처리 및 보상에 대한 협의 도출",
+                "최종적으로 권리 장벽을 위한 후속 특허 출원에 대한 지원 결정",
+                "자사 특허 내용의 일부가 유출됨으로 인해 특허 심사 과정에서 지연이 발생되어 13개월만에 최종적으로 특허 등록 완료"
+            ],
+            "result": [
+                "특허 출원을 통한 서비스 개념 보호로 인한 경쟁사의 서비스 도입 지연",
+                "특허 출원을 통한 자사 서비스의 차별화 및 가치 상승",
+                "특허를 활용해 기술보증기금으로부터 관련 자금 확보"
+            ],
+            "insight": [
+                "특허 출원 과정에서 안전한 권리 보호를 위해 기술적 내용이 추상적으로 작성되어야 함을 경험",
+                "외부 변리사와의 협업 시, 자사의 중요 내용 등이 유출될 수 있음을 인지하여, 계약서 작성시 관련 사항에 대한 추가 작성이 필요함을 인지",
+                "자금 확보 및 경쟁사 대응을 위한 특허 출원의 중요성을 경험"
+            ],
+            "reference": [
+                "/reference_imgs/patent.webp"
+            ]
+        },
+        {
+            "subject": "모바일 앱 개발",
+            "period": "2023.08 ~ 2024.03",
+            "role": "책임자",
+            "skills": [
+                "Flutter",
+                "gRPC",
+                "Dart",
+                "Firebase"
+            ],
+            "description": [
+                "당시 사내 자금 문제로 인하여 별도의 외주 인력 및 신규 인력 채용이 어려웠던 상황에서, 모바일 앱 개발 필요성 대두",
+                "2023년 6월 한 달 동안 근무시간 외 개인 공부를 통해 Flutter를 습득",
+                "제공된 Figma를 토대로 관련 디자인을 참고하여 Android, iOS 플랫폼 모두 지원하기 위해 Flutter를 이용한 Cross-Platform App 개발",
+                "업무량 증가로 인하여 별도 Database 설계, 부가적인 기능 개발, 보안 조치 등이 어려웠기에 Firebase 이용",
+                "Firebase를 이용한 데이터베이스, 인증, 클라우드 메시징, 앱 테스팅, 앱 성능 모니터링 등의 기능 이용",
+                "오디오 데이터 송・수신이 주력 기능이었기에 RESTful API보다 대역폭 효율성이 높은 gRPC 프로토콜 사용",
+                "Google Play Store, Apple App Store에 앱 등록 및 푸시 서버 설정에서 어려움을 겪었으나, 가이드 문서를 토대로 해결",
+                "각 앱 시장에서 제공하는 테스트 환경을 이용하여 알파 테스트 진행"
+            ],
+            "result": [
+                "Flutter를 이용한 Cross-Platform App 개발로 인한 개발 시간 단축",
+                "gRPC 프로토콜을 이용한 데이터 송・수신으로 인한 대역폭 효율성 증가",
+                "Test Flight, Google Play Console을 이용한 알파 테스트 진행으로 인한 사용자 피드백 수렴"
+            ],
+            "insight": [
+                "디자인을 참고하여 개발 시, 상세한 디자인 가이드가 없을 경우, 개발 시간이 늘어날 수 있음을 경험",
+                "gRPC 프로토콜의 경우, RESTful API에 비해 초기 설정 및 학습 곡선이 높음을 경험",
+                "gRPC 프로토콜을 사용할 경우, RESTful API에 비해 대역폭 효율성이 높아 동일한 오디오 데이터 전송시 약 30% 이상의 대역폭 절약을 경험",
+                "Firebase를 이용한 데이터베이스, 인증, 클라우드 메시징, 앱 테스팅, 앱 성능 모니터링 등의 기능을 이용하여 개발 시간 단축 및 편의성을 경험",
+                "앱 등록 및 푸시 서버 설정 시, Google Play Store, Apple App Store의 가이드 문서를 통해 해결하는 것이 중요함을 경험",
+                "Google 가이드 문서의 경우, 최신 버전의 내용이 온전히 반영되어 있지 않을 수 있음을 경험",
+                "알파 테스트 과정에서 테스트 담당자들에게 명확하게 피드백을 요청하는 것이 중요함을 경험"
+            ],
+            "reference": [
+                "/reference_imgs/app_1.webp",
+                "/reference_imgs/app_2.webp",
+                "/reference_imgs/app_3.webp"
             ]
         },
         {
@@ -146,50 +302,224 @@
             "period": "2023.08 ~ 2023.10",
             "role": "책임자",
             "skills": [
-                "Python", "PyTorch", "ffmpeg"
+                "Python",
+                "PyTorch",
+                "ffmpeg",
+                "x11 Forwarding",
+                "RESTful API"
             ],
             "description": [
-                "AI HUB를 통해 약 18TB의 음성 데이터 수집",
-                "ffmpeg을 이용한 음성 데이터 전처리",
-                "PyTorch를 이용한 음성 인공지능 학습"
+                "AI HUB를 통해 On-Premise 서버에 약 18TB 규모의 음성 데이터 수집",
+                "초기 AI HUB에서는 RESTful API를 통한 데이터 수집이 불가능하여, x11 Forwarding을 이용한 데이터 수집",
+                "추후 추가적인 데이터 확보 과정에서 AI HUB에서 RESTful API를 통한 데이터 수집 가능해져 다운로드 로직 개선",
+                "Python의 Asyncio, Concurrent.futures, ffmpeg를 이용해 비동기 병렬 처리로 음성 데이터 전처리 수행",
+                "음성 데이터 전처리 과정에서 일부 불량 데이터 식별",
+                "불량 데이터 선별, wav 확장자 통일, Sampling Rate 통일 등의 전처리 작업 수행",
+                "작업 특성상 Git Trunk-based Development 방식을 이용한 코드 관리",
+                "작업 과정에서 용량 부족 현상이 발생하여 Azure BlobStorage를 이용한 추가 저장소 확보"
             ],
             "result": [
-                "AI HUB를 통한 음성 데이터 수집으로 인한 데이터 양 증가",
-                "ffmpeg을 이용한 음성 데이터 전처리로 인한 학습 데이터 품질 증가",
-                "PyTorch를 이용한 음성 인공지능 학습으로 인한 학습 정확도 증가"
+                "SV2TTS, TTS 등의 음성 인공지능 학습을 위한 데이터 수집 및 전처리 완료",
+                "비동기 병렬 처리로 인한 데이터 전처리 시간 단축",
+                "불량 데이터 식별 및 전처리로 인한 학습 데이터 품질 향상"
             ],
             "insight": [
-                "음성 데이터 수집 시, 데이터의 양과 품질을 고려하여 데이터 수집",
-                "음성 데이터 전처리 시, 데이터의 노이즈 제거 및 데이터 정규화를 고려하여 전처리",
-                "음성 인공지능 학습 시, 학습 데이터의 양과 품질을 고려하여 학습"
+                "대용량 데이터 처리시 비동기 병렬 처리의 중요성을 경험",
+                "대용량 데이터 처리시 일정 산출 및 작업 현황 점검을 위한 로그 기록 및 처리 현황 시각화의 중요성을 경험",
+                "데이터 전처리 과정에서의 불량 데이터 식별 및 전처리의 중요성을 경험",
+                "Git 개발 방식에 대한 이해와 코드 관리의 중요성을 경험"
+            ],
+            "reference": [
+                ""
             ]
         },
         {
-            "subject": "",
-            "period": "",
-            "role": "",
-            "skills": [],
-            "description": [],
-            "result": [],
-            "insight": []
+            "subject": "Prompt Test를 위한 테스트 솔루션",
+            "period": "2023.08 ~ 2024.03",
+            "role": "페이지 구축 및 배포 담당자",
+            "skills": [
+                "Python",
+                "Streamlit",
+                "Docker",
+                "SQLite3",
+                "LangChain"
+            ],
+            "description": [
+                "다양한 LLM 모델의 등장으로 인해 ChatGPT, Claud AI, Gemini에 대한 성능, 비용 측면에서의 비교 작업 필요성 대두",
+                "해당 모델을 동시 평가하기 위한 Prompt Test 페이지 구축",
+                "타 작업 중간에 구축해야 했기 때문에 빠른 빌드 및 배포가 필요하여 Streamlit을 이용한 페이지 구축",
+                "SQLite3를 이용해 프롬프트 정보 보관 및 관리",
+                "Docker를 이용해 On-Premise 서버에 배포 및 폐쇄망 환경에서 사용 가능하도록 배포"
+            ],
+            "result": [
+                "Prompt Test 페이지를 통해 ChatGPT, Claud AI, Gemini의 성능, 비용 측면에서의 비교 작업 완료",
+                "각 API의 성능, 비용 측면에서의 장단점을 파악하여, 향후 모델 선택에 대한 기준 마련"
+            ],
+            "insight": [
+                "Streamlit을 이용하는 것보다 FastAPI와 Svelte를 이용하는 것이 더 효율적일 수 있음을 경험",
+                "Docker를 이용한 배포 시, On-Premise 서버에서의 배포 및 폐쇄망 환경에서의 사용 가능성을 경험",
+                "데이터 규모가 크지 않은 경우, PostgreSQL보다 SQLite3를 이용하는 것이 더 효율적일 수 있음을 경험"
+            ],
+            "reference": [
+                ""
+            ]
         },
         {
-            "subject": "",
-            "period": "",
-            "role": "",
-            "skills": [],
-            "description": [],
-            "result": [],
-            "insight": []
+            "subject": "마케팅 사전예약 랜딩페이지 제작",
+            "period": "2023.12 ~ 2024.01",
+            "role": "책임자",
+            "skills": [
+                "Docker",
+                "React",
+                "Nginx",
+                "Azure",
+                "FastAPI",
+                "SQLite3"
+            ],
+            "description": [
+                "로컬 Docker Container 환경에서 React를 이용한 랜딩페이지 제작",
+                "로컬 Docker Container 환경에서 사용자 입력 정보를 저장하는 FastAPI를 이용한 백엔드 서버 구축",
+                "Docker Network를 이용하여 프론트엔드 백엔드 연동",
+                "모종의 이유로 발생할 수 있는 DB 탈취 및 보안 문제를 고려하여 DB는 SHA-256과 Random Salt를 활용해 암호화하여 저장",
+                "Azure VM에서 Docker Container 환경으로 배포"
+            ],
+            "result": [
+                "로컬 Docker Container 환경에서의 랜딩페이지 제작 및 사용자 입력 정보 저장 완료",
+                "Azure VM에서의 Docker Container 환경으로의 배포 완료",
+                "랜딩페이지를 통한 마케팅 사전예약 완료"
+            ],
+            "insight": [
+                "Web 부문에서 Flutter Web은 제한된 기능을 가지고 있어 React, Svelte와 같은 프레임워크가 더 적합할 수 있음을 경험",
+                "로컬 Docker Container 환경에서의 개발 시, Docker Network를 이용하여 프론트엔드 백엔드 연동의 중요성을 경험",
+                "암호화 과정에서 보안과 성능의 균형을 맞추는 것이 중요함을 경험"
+            ],
+            "reference": [
+                ""
+            ]
         },
         {
-            "subject": "",
-            "period": "",
-            "role": "",
-            "skills": [],
-            "description": [],
-            "result": [],
-            "insight": []
+            "subject": "음성 인공지능을 위한 모델 설계 및 학습",
+            "period": "2023.10 ~ 2024.06",
+            "role": "책임자",
+            "skills": [
+                "Python",
+                "PyTorch",
+                "CUDA",
+                "cuDNN",
+                "TensorBoard",
+                "Azure"
+            ],
+            "description": [
+                "SV2TTS 논문 기반 인공지능 작업 프로세스 수립",
+                "Azure를 이용한 GPU 서버(V100, A10, A100) 환경 구축",
+                "화자 식별을 위한 Speaker Encoder 모델 설계",
+                "Speaker Encoder 모델 설계 과정에서 CUDA, cuDNN을 이용한 GPU 가속화",
+                "TensorBoard를 이용한 모델 학습 과정 시각화",
+                "목소리 생성을 위해 초기 Github에 공개되어 있는 Tacotron, WaveGlow 모델 활용",
+                "해당 모델 점검 과정에서 Tacotron의 CBHG 모델에서 비효율성 식별",
+                "CBHG 모델을 Transformer 모델로 대체하여 설계 및 학습",
+                "Synthesizer 모델 학습 과정에서 사내 자금 부족으로 인한 Azure 서버 사용 및 프로젝트 중단"
+            ],
+            "result": [
+                "Speaker Encoder 모델을 이용한 화자 식별 모델 설계 및 학습 완료",
+                "CBHG 모델을 Transformer 모델로 대체하여 학습 시간 단축 및 성능 향상",
+                "Tacotron, WaveGlow 모델을 이용한 목소리 생성 모델 설계 및 학습 완료",
+                "Azure를 이용한 GPU 서버 환경 구축으로 인한 학습 시간 단축",
+                "TensorBoard를 이용한 모델 학습 과정 시각화로 인한 학습 효율화"
+            ],
+            "insight": [
+                "인공지능 관련 작업에서 고성능 GPU의 중요성을 경험",
+                "PyTorch 기반 모델 설계 및 학습 시, Nvidia에서 배포한 CUDA, cuDNN보다 PyTorch 내부에서 제공하는 함수를 이용하는 것이 더 효율적임을 경험",
+                "모델 설계 및 학습 시, TensorBoard를 이용한 시각화의 중요성을 경험",
+                "자금 부족으로 인한 프로젝트 중단 시, 사업의 지속성과 자금 조달의 중요성을 경험"
+            ],
+            "reference": [
+                ""
+            ]
+        },
+        {
+            "subject": "TradeFactory 웹 개발 및 호스팅",
+            "period": "2024.04 ~ 2024.06",
+            "role": "책임자",
+            "skills": [
+                "Wordpress",
+                "Nginx",
+                "JavaScript",
+                "Docker",
+                "Python",
+                "FastAPI"
+            ],
+            "description": [
+                "OCI Ubuntu VM을 이용하여 호스팅 서버 구축",
+                "Docker 환경 내 bitnami/wordpress-nginx 이미지를 이용하여 웹 서버 구축",
+                "Docker 환경 내 bitnami/mariadb 이미지를 이용하여 데이터베이스 구축",
+                "Docker network를 이용하여 웹 서버와 데이터베이스 연동",
+                "Wordpress 테마 및 플러그인을 이용한 웹 개발",
+                "클라이언트 측에서 요청한 파일 기반 주문 접수 기능은 FastAPI를 이용하여 개발",
+                "CORS 설정을 통한 XSS, CSRF 방지",
+                "Nginx를 이용한 웹 서버 리버스 프록시 설정",
+                "Let's Encrypt를 이용한 SSL 인증서 발급 및 HTTPS 적용",
+                "클라이언트 측 요청 도메인 및 도메인 네임서버 설정",
+                "구축 후 클라이언트 측으로부터 서버 마비에 대한 문의 발생",
+                "유지보수에 대한 계약은 체결하지 않았으나, 확인 결과 SSH 무작위 접속 공격 및 클라이언트 측 시크릿 키 유출로 인한 서버 마비",
+                "VM 복구 후 클라이언트 측에 대한 보안 교육 실시"
+            ],
+            "result": [
+                "Wordpress를 사용함으로써 비개발자 관리자도 쉽게 웹 페이지 수정 가능",
+                "OCI Ubuntu VM을 이용한 호스팅 서버 구축 완료",
+                "Docker 환경을 이용하여 추후 클라이언트 요청에 따른 확장성 확보"
+            ],
+            "insight": [
+                "비개발자 시선에서 '좋은 기술'은 '쉬운 기술'일 수 있음을 경험",
+                "비개발자와 개발자간 사용하는 언어가 다를 수 있어 명확한 의사소통이 필요함을 경험",
+                "비개발자 입장에서 편의성을 위해 보안 취약점을 무시할 수 있기에 사전 교육이 필요함을 경험"
+            ],
+            "reference": [
+                ""
+            ]
+        },
+        {
+            "subject": "쿠팡 파트너스 자동화 프로그램",
+            "period": "2024.05 ~ 2024.07",
+            "role": "책임자",
+            "skills": [
+                "Python",
+                "FastAPI",
+                "Pyinstaller",
+                "Svelte",
+                "TypeScript",
+                "RESTful API"
+            ],
+            "description": [
+                "쿠팡 파트너스 API를 이용한 상품 정보 수집 및 자동 포스팅 프로그램 빌드",
+                "초기 클라이언트 요청에 따라 Flutter, FastAPI를 이용한 프로그램 빌드",
+                "Flutter를 이용해 Windows Application 빌드하였으나, 일부 Windows 버전에서 dll 오류 발생",
+                "해당 오류는 대게 ARM 기반 Windows 11에서 발생하였으며, 이를 우회하기 위해 다중 빌드가 필요한 상태였음",
+                "이에 대한 해결책으로 Svelte를 이용한 Web Application 빌드",
+                "Svelte를 이용한 Web Application 빌드로 인해 Windows Application 빌드의 문제점 해결",
+                "FastAPI 기능 개발 과정 중 Coupang Partners API의 hmac을 처음 접하는 것으로 인해 어려움을 겪음",
+                "해당 문제를 해결하기 위해 Python의 hashlib을 이용한 hmac 생성 및 검증 방법 학습 및 적용",
+                "Gemini API를 이용한 글 작성 및 포스팅 기능 추가",
+                "Pyinstaller를 활용해 프론트엔드, 백엔드 기능을 파일 하나로 묶어 Windows Application 빌드",
+                "Github Release를 통한 배포 및 업데이트",
+                "Github Issues를 통한 사용자 피드백 수렴 및 개선",
+                "프로그램 버전 확인 및 업데이트 기능 추가"
+            ],
+            "result": [
+                "쿠팡 파트너스 API를 이용한 상품 정보 수집 및 자동 포스팅 프로그램 완료",
+                "Svelte를 이용한 Web Application 빌드로 인한 Windows Application 빌드의 문제점 해결",
+                "카카오톡이 아닌 Github을 이용함으로써 작업 효율화 달성"
+            ],
+            "insight": [
+                "hmac의 개념 및 사용법을 이해하고 적용하는 것이 중요함을 경험",
+                "Flutter를 이용한 Windows Application 빌드 시, ARM 기반 Windows와 AMD 기반 Windows의 호환성 문제를 경험",
+                "비개발자 시선에서 CLI 환경(Powershell, Bash ...)이 나타나는 것을 불안해하므로, GUI 환경을 제공하는 것이 중요함을 경험",
+                "클라이언트 편의에 따라 카카오톡을 사용할 경우, 오히려 양측의 작업 효율이 떨어질 수 있음을 경험",
+                "클라이언트 스스로 요구사항에 대해 명확히 이해하지 못할 수 있으므로, 이를 위한 추가적인 설명이 필요함을 경험"
+            ],
+            "reference": [
+                ""
+            ]
         }
     ]
 }

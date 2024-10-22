@@ -6,6 +6,13 @@
 
 <nav>
 	<ul>
+		<!-- <li>
+			<a
+				href="/code-style"
+				class="text-light"
+				on:click|preventDefault={() => goto('/code-style')}>code-style</a
+			>
+		</li> -->
 		<li>
 			<a
 				href="/projects"
@@ -27,7 +34,9 @@
 	@import url('../style/fonts.css');
 	nav {
 		display: flex;
-		width: 20%;
+		width: 60%;
+		justify-content: flex-end;
+		margin-right: 3.5rem;
 	}
 
 	ul {

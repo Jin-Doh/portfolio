@@ -19,14 +19,14 @@
         align-items: center;
         flex-direction: row;
 		width: 100%;
-		height: 40vh;
+		height: 30rem;
 	}
 
     .introduce::before {
         content: '';
         position: absolute;
         width: 100%;
-        height: 40%;
+        height: 30rem;
         background-color: rgba(0, 0, 0, 0.5);
         z-index: 1;
     }
