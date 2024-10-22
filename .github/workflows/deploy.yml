@@ -27,13 +27,13 @@ jobs:
       - name: Build the project
         run: npm run build
 
-      # Start the SSH agent and add the SSH key with a password
-      - name: Start SSH Agent and Add Key
+      # Start the SSH agent and Add id_rsa key with a password
+      - name: Start SSH Agent and Add id_rsa
         run: |
           eval $(ssh-agent -s)
-          echo "${{ secrets.SERVER_SSH_KEY }}" > private_key.pem
-          chmod 600 private_key.pem
-          echo "${{ secrets.SERVER_SSH_PASSWORD }}" | ssh-add private_key.pem
+          echo "${{ secrets.SERVER_SSH_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          echo "${{ secrets.SERVER_SSH_PASSWORD }}" | ssh-add ~/.ssh/id_rsa
         env:
           SERVER_SSH_PASSWORD: ${{ secrets.SERVER_SSH_PASSWORD }}
           SERVER_SSH_KEY: ${{ secrets.SERVER_SSH_KEY }}
@@ -46,8 +46,5 @@ jobs:
             git pull origin main
             npm install
             npm run build
-            # pm2 restart portfolio
-            # If using Docker, use the following instead:
-            docker-compose down
-            docker-compose up -d --build
+            pm2 restart portfolio
           EOF
