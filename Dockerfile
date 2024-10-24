@@ -12,8 +12,6 @@ WORKDIR /usr/share/nginx/html
 
 # Copy the built SvelteKit static files to the Nginx html directory
 COPY --from=builder /app/build/ .
-COPY --from=builder /app/404.html .
-COPY --from=builder /app/404-style.css .
 
 # Copy the default Nginx configuration
 COPY nginx.conf /etc/nginx/conf.d/default.conf
