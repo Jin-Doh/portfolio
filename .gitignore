@@ -82,4 +82,6 @@ package
 .history
 .ionide
 
+certbot
+
 # End of https://www.toptal.com/developers/gitignore/api/svelte,macos,visualstudiocode
