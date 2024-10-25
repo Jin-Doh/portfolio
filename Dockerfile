@@ -13,12 +13,11 @@ WORKDIR /usr/share/nginx/html
 # Copy the built SvelteKit static files to the Nginx html directory
 COPY --from=builder /app/build/ .
 
-# Copy the default Nginx configuration
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+# Set permissions for webp files
 RUN find /usr/share/nginx/html -type f -name "*.webp" -exec chmod 644 {} \;
 
-# Expose the port that Nginx will run on
-EXPOSE 80
+# Expose ports for HTTP and HTTPS
+EXPOSE 80 443
 
 # Start Nginx
 CMD ["nginx", "-g", "daemon off;"]
