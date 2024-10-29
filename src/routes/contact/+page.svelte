@@ -1,12 +1,8 @@
 <script lang="ts">
-    import Header from '../components/Header.svelte';
-    import Footer from '../components/Footer.svelte';
-
     import { page } from '$app/stores';
     import { onMount } from 'svelte';
 </script>
 
-<Header />
 <main>
     <div class="contact-sec">
         <h1 class="contact-title text-bold">Contact Me</h1>
@@ -27,7 +23,6 @@
         </div>
     </div>
 </main>
-<Footer />
 
 <style>
     @import url('../style/fonts.css');

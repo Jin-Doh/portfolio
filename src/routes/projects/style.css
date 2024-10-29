@@ -111,6 +111,13 @@
 	color: #ffffff;
 }
 
+.too-long {
+	/* it is `...` */
+	color: #f2f2f2;
+	padding: 0.25rem 0.5rem;
+	border-radius: 12px;
+}
+
 .project {
 	padding: 2rem;
 	background-color: #0d0d0d;
@@ -140,9 +147,21 @@
 }
 
 .project-period,
+.project-belong {
+	margin: 0 0 0.25rem 0;
+}
+
+.project-role {
+	margin-top: 0
+}
+
 .project-role,
+.project-challenges,
 .project-description,
+.project-contributions,
 .project-result,
+.project-performance,
+.project-improvement,
 .project-insight {
 	margin-bottom: 0.5rem;
 }
@@ -154,8 +173,12 @@
 	margin-bottom: 1rem;
 }
 
+.project-challenges,
 .project-description,
+.project-contributions,
 .project-result,
+.project-performance,
+.project-improvement,
 .project-insight {
 	background-color: #2a2a2a;
 	padding: 1.25rem;

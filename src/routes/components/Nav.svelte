@@ -6,13 +6,13 @@
 
 <nav>
 	<ul>
-		<!-- <li>
+		<li>
 			<a
-				href="/code-style"
+				href="/dev-style"
 				class="text-light"
-				on:click|preventDefault={() => goto('/code-style')}>code-style</a
+				on:click|preventDefault={() => goto('/dev-style')}>Dev Style</a
 			>
-		</li> -->
+		</li>
 		<li>
 			<a
 				href="/projects"

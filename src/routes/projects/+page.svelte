@@ -1,6 +1,4 @@
 <script lang="ts">
-	import Header from '../components/Header.svelte';
-	import Footer from '../components/Footer.svelte';
 	import { onMount, tick } from 'svelte';
 
 	let isLoading = true;
@@ -9,17 +7,19 @@
 	let datas: any = {};
 	let projects: any[] = [];
 
-	let backend = ['Python', 'PyTorch', 'FastAPI', 'RESTful API', 'gRPC'];
-	let frontend = ['HTML', 'CSS', 'JavaScript', 'Svelte', 'React', 'Flutter'];
+	let backend = ['Python', 'PyTorch', 'FastAPI', 'RESTful API', 'gRPC', 'nginx'];
+	let frontend = ['HTML', 'CSS', 'JavaScript', 'Svelte', 'React', 'Flutter', 'dart', 'TypeScript'];
 	let devops = [
 		'Docker',
 		'Kubernetes',
 		'Azure',
 		'Git',
-		'Gitlab',
+		'GitLab',
 		'Grafana',
 		'Prometheus',
-		'OpenSSH'
+		'OpenSSH',
+		'CI/CD Automation',
+		'SSL/TLS',
 	];
 	let ml = ['CUDA', 'cuDNN', 'TensorBoard'];
 	let database = ['MySQL', 'SQLite3', 'PostgreSQL'];
@@ -74,7 +74,6 @@
 			// scroll top of the page smoothly
 			await window.scrollTo({ top: 0, behavior: 'smooth' });
 		}
-		
 	}
 
 	async function nextPage() {
@@ -95,7 +94,6 @@
 	})();
 </script>
 
-<Header />
 <main>
 	<div class="summary">
 		<div class="toggle-summary-container">
@@ -117,9 +115,20 @@
 					<button class="summary-item" on:click={() => scrollToProject(project.id)}>
 						<h3 class="summary-title text-regular">{project.subject}</h3>
 						<div class="summary-skills">
-							{#each project.skills as skill (skill)}
+							 <!-- {#each project.skills as skill (skill)}
 								<span class={`text-light skill-tag ${getSkillClass(skill)}`}>{skill}</span>
-							{/each}
+							{/each} -->
+							{#if project.skills.length > 6}
+								{#each project.skills.slice(0, 6) as skill (skill)}
+									<span class={`text-light skill-tag ${getSkillClass(skill)}`}>{skill}</span>
+								{/each}
+								<span class="text-light skill-tag too-long">...</span>
+							{:else}
+								{#each project.skills as skill (skill)}
+									<span class={`text-light skill-tag ${getSkillClass(skill)}`}>{skill}</span>
+								{/each}
+							{/if}
+							
 						</div>
 					</button>
 				{/each}
@@ -135,12 +144,20 @@
 			{#each paginatedProjects as project (project.id)}
 				<div id={`project-${project.id}`} class="project-content">
 					<h3 class="project-subject text-bold">{project.subject}</h3>
-					<p class="project-period text-light">{project.period}</p>
-					<p class="project-role text-light">{project.role}</p>
+					<p class="project-period text-light">- 기간: {project.period}</p>
+					<p class="project-belong text-light">- 소속: {project.belong}</p>
+					<p class="project-role text-light">- 역할: {project.role}</p>
 					<div class="project-skill text-regular">
 						{#each project.skills as skill (skill)}
 							<span class={`skill-tag ${getSkillClass(skill)}`}>{skill}</span>
 						{/each}
+					</div>
+					<div class="project-challenges text-light">
+						<p class="text-regular">기술적 도전</p>
+						<ul>
+							{#each project.challenges as chal (chal)}
+								<li>{chal}</li>
+							{/each}
 					</div>
 					<div class="project-description text-light">
 						<p class="text-regular">프로젝트 설명</p>
@@ -150,13 +167,27 @@
 							{/each}
 						</ul>
 					</div>
+					<div class="project-contributions text-light">
+						<p class="text-regular">프로젝트 기여</p>
+						<ul>
+							{#each project.contributions as cont (cont)}
+								<li>{cont}</li>
+							{/each}
+					</div>
 					<div class="project-result text-light">
-						<p class="text-regular">프로젝트 성과</p>
+						<p class="text-regular">프로젝트 결과</p>
 						<ul>
 							{#each project.result as res (res)}
 								<li>{res}</li>
 							{/each}
 						</ul>
+					</div>
+					<div class="project-performance text-light">
+						<p class="text-regular">프로젝트 성과</p>
+						<ul>
+							{#each project.performance as perf (perf)}
+								<li>{perf}</li>
+							{/each}
 					</div>
 					<div class="project-insight text-light">
 						<p class="text-regular">프로젝트를 통해 배운 점</p>
@@ -165,6 +196,13 @@
 								<li>{ins}</li>
 							{/each}
 						</ul>
+					</div>
+					<div class="project-improvement text-light">
+						<p class="text-regular">개선점</p>
+						<ul>
+							{#each project.improvement as imp (imp)}
+								<li>{imp}</li>
+							{/each}
 					</div>
 					<div class="project-reference">
 						{#each project.reference || [] as ref, index (index)}
@@ -199,7 +237,6 @@
 		</div>
 	{/if}
 </main>
-<Footer />
 
 <style>
 	@import url('./style.css');
