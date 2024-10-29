@@ -7,7 +7,7 @@
     <div class="contact-sec">
         <h1 class="contact-title text-bold">Contact Me</h1>
         <div class="description">
-            <p class="text-light">Python Developer, BackEnd Engineer, 김경호.</p>
+            <p class="text-light">Python Developer, BackEnd・MLOps Engineer, 김경호.</p>
         </div>
         <div class="column">
             <div class="left">
@@ -18,7 +18,7 @@
             </div>
         </div>
         <div class="notice">
-            <p class="text-light notice-text">※ 연락처 악용 및 스팸 연락 인해 부득이 포워딩 이메일을 기입했습니다.</p>
+            <p class="text-light notice-text">※ 스팸 연락 인해 부득이 포워딩 이메일을 기입했습니다.</p>
             <p class="text-light notice-text">※ 이메일로 연락 주시면 빠른 시일 내에 답변 드리겠습니다.</p>
         </div>
     </div>
@@ -102,5 +102,35 @@
     .notice-text {
         color: #F2F2F2;
         margin: 0;
+    }
+
+    @media screen and (max-width: 768px) {
+        .contact-sec {
+            height: 100vh;
+        }
+
+        .contact-title {
+            font-size: 1.5rem;
+        }
+
+        .description {
+            font-size: 0.75rem;
+        }
+
+        .column {
+            padding: 0 1rem;
+        }
+
+        .left h2 {
+            font-size: 1.25rem;
+        }
+
+        .right p {
+            font-size: 0.9rem;
+        }
+
+        .notice {
+            font-size: 0.75rem;
+        }
     }
 </style>

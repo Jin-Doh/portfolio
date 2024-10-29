@@ -23,9 +23,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
-        max-width: 1200px;
-        padding: 0 3rem;
+        width: 100vw;
+        /* padding: 0 3rem; */
     }
 
     .left {
@@ -53,5 +52,21 @@
         font-size: 1rem;
         color: #f2f2f2;
         margin-bottom: 1rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        .about-content {
+            flex-direction: column;
+        }
+
+        .left {
+            padding-right: 0;
+            border-right: none;
+            border-bottom: 1px solid #f2f2f2;
+        }
+
+        .right {
+            padding-left: 0;
+        }
     }
 </style>

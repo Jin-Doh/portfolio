@@ -61,7 +61,6 @@
 	}
 
 	.dropdown-title {
-		font-weight: bold;
 		margin: 0;
 	}
 
@@ -72,5 +71,16 @@
 	.dropdown-content {
 		padding: 1rem;
 		border-radius: 0 0 5px 5px;
+	}
+
+	@media (max-width: 768px) {
+		.dropdown-title {
+			font-size: 1rem;
+		}
+
+		.dropdown-content {
+			padding: 0.5rem;
+			font-size: 0.8rem;
+		}
 	}
 </style>

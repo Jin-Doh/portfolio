@@ -130,4 +130,15 @@
         height: 2.2rem;
         margin-right: 0.5rem;
     }
+
+    @media screen and (max-width: 768px) {
+        .skill-list {
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .section {
+            min-width: 0;
+        }
+    }
 </style>

@@ -31,7 +31,7 @@
         position: fixed;
         top: 0;
         left: 0;
-        max-width: 100vw;
+        width: 92.5vw;
         z-index: 1000;
 		display: flex;
 		justify-content: space-between;

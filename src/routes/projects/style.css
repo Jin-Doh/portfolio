@@ -227,3 +227,57 @@
 	font-size: 1rem;
 	color: #f2f2f2;
 }
+
+@media screen and (max-width: 768px) {
+	.summary-title {
+		font-size: 1rem;
+	}
+
+	.summary-skills {
+		display: none;
+	}
+
+	.project-content {
+		padding: 1rem;
+	}
+
+	.project-title {
+		font-size: 1.5rem;
+	}
+
+	.project-subject {
+		font-size: 1.25rem;
+	}
+
+	.project-period,
+	.project-belong {
+		font-size: 0.75rem;
+	}
+
+	.project-role {
+		font-size: 0.75rem;
+	}
+
+	.project-challenges,
+	.project-description,
+	.project-contributions,
+	.project-result,
+	.project-performance,
+	.project-improvement,
+	.project-insight {
+		padding: 0.75rem;
+	}
+
+	.project-skill {
+		margin-bottom: 0.5rem;
+	}
+
+	.project-reference {
+		gap: 0.5rem;
+	}
+
+	.ref-img {
+		max-width: 15rem;
+		max-height: 15rem;
+	}
+}

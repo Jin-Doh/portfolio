@@ -384,4 +384,14 @@
 			font-size: 8px;
 		}
 	}
+
+	@media screen and (max-width: 720px) {
+		.error-page {
+			height: 87vh;
+		}
+
+		figure {
+			font-size: 5px;
+		}
+	}
 </style>

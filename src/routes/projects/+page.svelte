@@ -34,6 +34,8 @@
 			projects = datas.projects
 				.filter((project: any) => project.subject)
 				.map((project: any, index: number) => ({ ...project, id: index + 1 }));
+			// if mobile, projectsPerPage = 1
+			if (window.innerWidth < 768) projectsPerPage = 1;
 		} catch (error) {
 			console.error('Error fetching projects:', error);
 		} finally {
