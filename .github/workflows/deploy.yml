@@ -48,6 +48,7 @@ jobs:
             cd /home/ubuntu/kyungho.info
             git pull origin main --force
             npm install
+            sudo chmod -R 777 ./certbot
             npm run build
             docker-compose up -d --build
           EOF
