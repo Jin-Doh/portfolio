@@ -14,15 +14,25 @@
                         <img class="icon" src="/icons/fastapi.svg" alt="fastapi" />
                         <li>Fast API</li>
                     </div>
+                </ul>
+            </div>
+            <!-- 2. Frontend sections -->
+            <div class="section">
+                <h2 class="text-bold sec-name">FRONTEND</h2>
+                <ul>
                     <div class="row">
-                        <img class="icon" src="/icons/pytorch.svg" alt="pytorch" />
-                        <li>Pytorch</li>
+                        <img src="/icons/flutter.svg" alt="flutter" class="icon">
+                        <li>Flutter</li>
+                    </div>
+                    <div class="row">
+                        <img src="/icons/svelte.svg" alt="svelte" class="icon">
+                        <li>Svelte</li>
                     </div>
                 </ul>
             </div>
             <div class="section">
-                <!-- 2. DevOps sections -->
-                <h2 class="text-bold sec-name">DEVOPS</h2>
+                <!-- 3. ETC sections -->
+                <h2 class="text-bold sec-name">ETC</h2>
                 <ul>
                     <div class="row">
                         <img src="/icons/docker.svg" alt="docker" class="icon">
@@ -44,19 +54,9 @@
                         <img src="/icons/gitlab.svg" alt="gitlab" class="icon">
                         <li>Gitlab</li>
                     </div>
-                </ul>
-            </div>
-            <!-- 3. Frontend sections -->
-            <div class="section">
-                <h2 class="text-bold sec-name">FRONTEND</h2>
-                <ul>
                     <div class="row">
-                        <img src="/icons/flutter.svg" alt="flutter" class="icon">
-                        <li>Flutter</li>
-                    </div>
-                    <div class="row">
-                        <img src="/icons/svelte.svg" alt="svelte" class="icon">
-                        <li>Svelte</li>
+                        <img class="icon" src="/icons/pytorch.svg" alt="pytorch" />
+                        <li>Pytorch</li>
                     </div>
                 </ul>
             </div>
